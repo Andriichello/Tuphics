@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Fractal.Options"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingStart="10dp"
+    android:paddingEnd="10dp"
+
+    android:background="@color/black"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:layout_gravity="top"
+        android:orientation="vertical">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/Fractal.Options.ShapesRecycler"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:itemCount="2"
+            tools:listitem="@layout/checkbox_item">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:layout_marginStart="20dp"
+        android:orientation="vertical">
+
+        <include android:id="@+id/Fractal.Options.Proportions"
+            layout="@layout/counter"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginBottom="5dp"/>
+
+        <include android:id="@+id/Fractal.Options.Iterations"
+            layout="@layout/counter" />
+
+    </LinearLayout>
+
+
+
+    
+    <Button
+        android:id="@+id/Fractal.Options.Apply"
+        android:layout_width="@dimen/apply_button_size"
+        android:layout_height="@dimen/apply_button_size"
+
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+
+        android:layout_gravity="bottom"
+        android:background="@drawable/apply_button_background"/>
+
+</LinearLayout>

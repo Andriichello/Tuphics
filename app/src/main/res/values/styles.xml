@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Text" parent="">
+        <item name="android:textStyle">normal</item>
+<!--        <item name="android:fontFamily">monospace</item>-->
+
+        <item name="android:lineSpacingExtra">0sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!--  HEADERS  -->
+    <style name="Text.Header" parent="Text">
+        <item name="android:textStyle">normal|bold</item>
+    </style>
+
+    <style name="Text.Header.1" parent="Text.Header">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="Text.Header.2" parent="Text.Header">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Header.3" parent="Text.Header">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Header.4" parent="Text.Header">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Header.5" parent="Text.Header">
+        <item name="android:textSize">12sp</item>
+    </style>
+    <!--  HEADERS  -->
+
+
+    <!--  DESCRIPTIONS  -->
+    <style name="Text.Description" parent="Text">
+        <item name="android:textStyle">italic|normal</item>
+    </style>
+
+    <style name="Text.Description.1" parent="Text.Description">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Description.2" parent="Text.Description">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Description.3" parent="Text.Description">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Description.4" parent="Text.Description">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.Description.5" parent="Text.Description">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <!--  DESCRIPTIONS  -->
+
+
+    <!--  PARAGRAPHS  -->
+    <style name="Text.Paragraph" parent="Text">
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="Text.Paragraph.1" parent="Text.Paragraph">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.Paragraph.2" parent="Text.Paragraph">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.Paragraph.3" parent="Text.Paragraph">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.Paragraph.4" parent="Text.Paragraph">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="Text.Paragraph.5" parent="Text.Paragraph">
+        <item name="android:textSize">10sp</item>
+    </style>
+    <!--  PARAGRAPHS  -->
+
+</resources>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:width="@dimen/apply_button_size" android:height="@dimen/apply_button_size">
+                <shape android:shape="rectangle">
+                    <padding android:top="9dp" android:bottom="9dp" android:right="9dp" android:left="9dp"/>
+                    <corners android:radius="10dp" />
+                    <solid android:color="#1D1D1B" />
+                </shape>
+            </item>
+
+            <item android:drawable="@drawable/ic_floppy_disk"/>
+        </layer-list>
+    </item>
+
+    <item>
+        <layer-list>
+            <item android:width="@dimen/apply_button_size" android:height="@dimen/apply_button_size">
+                <shape android:shape="rectangle">
+                    <padding android:top="9dp" android:bottom="9dp" android:right="9dp" android:left="9dp"/>
+                    <corners android:radius="10dp" />
+                    <solid android:color="#801D1D1B" />
+                </shape>
+            </item>
+
+            <item android:drawable="@drawable/ic_floppy_disk"/>
+        </layer-list>
+    </item>
+
+
+</selector>

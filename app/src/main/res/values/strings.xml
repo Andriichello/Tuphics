@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name" translatable="false">Tuphics</string>
+    <string name="exit_toast">Press back again to exit</string>
+
+
+    <string name="categories">Categories</string>
+
+    <!--  Toolbars  -->
+    <string name="fractals_title">Fractals</string>
+    <string name="fractals_description">Draw fractals</string>
+
+    <string name="imagecoloring_title">Images</string>
+    <string name="imagecoloring_description">Image coloring</string>
+
+    <string name="transitions_title">Transitions</string>
+    <string name="transitions_description">Rectangle transitions</string>
+    <!--  Toolbars  -->
+
+
+    <string name="proportions">Proportions</string>
+    <string name="iterations">Iterations</string>
+    <string name="triangle">Triangle</string>
+    <string name="square">Square</string>
+
+    <string name="N_to_M_format">%d to %d</string>
+
+
+</resources>

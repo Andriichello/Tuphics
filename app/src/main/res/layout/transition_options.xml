@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mask="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Transition.Options"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+
+    android:background="@color/black"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:visibility="gone"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
+            android:id="@+id/Transitions.Options.A"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberSigned"
+            android:background="@null"
+
+            android:padding="3dp"
+
+            mask:mask="A(#;#)"
+            android:hint="XY"
+            app:keep_hint="true"
+            android:textColorHint="@color/dark_gray"
+
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textAppearance="@style/Text.Header.3"/>
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
+            android:id="@+id/Transitions.Options.B"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberSigned"
+            android:background="@null"
+
+            android:padding="3dp"
+
+            mask:mask="B(#;#)"
+            android:hint="XY"
+            app:keep_hint="true"
+            android:textColorHint="@color/dark_gray"
+
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textAppearance="@style/Text.Header.3"/>
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
+            android:id="@+id/Transitions.Options.C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberSigned"
+            android:background="@null"
+
+            android:padding="3dp"
+
+            mask:mask="C(#;#)"
+            android:hint="XY"
+            app:keep_hint="true"
+            android:textColorHint="@color/dark_gray"
+
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textAppearance="@style/Text.Header.3"/>
+
+        <br.com.sapereaude.maskedEditText.MaskedEditText
+            android:id="@+id/Transitions.Options.D"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:inputType="numberSigned"
+            android:background="@null"
+
+            android:padding="3dp"
+
+            mask:mask="D(#;#)"
+            android:hint="XY"
+            app:keep_hint="true"
+            android:textColorHint="@color/dark_gray"
+
+            android:maxLines="1"
+            android:textColor="@color/white"
+            android:textAppearance="@style/Text.Header.3"/>
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Transition.Options.Anchors.Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:clipToPadding="false"
+
+        tools:itemCount="4"
+        tools:listitem="@layout/anchors_recycler_item"
+        mask:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="horizontal"
+        mask:spanCount="1"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Transition.Options.Points.Recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:clipToPadding="false"
+
+        tools:itemCount="4"
+        tools:listitem="@layout/anchors_recycler_item"
+        mask:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        android:orientation="horizontal"
+        mask:spanCount="1"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Transition.Options.Anchor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/Transition.Options.Anchor.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Anchor"
+                    app:layout_constraintBottom_toTopOf="@id/Transition.Options.Anchor.Slider"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/Transition.Options.Anchor.Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="0"
+                    android:layout_marginEnd="10dp"
+                    app:layout_constraintBottom_toTopOf="@id/Transition.Options.Anchor.Slider"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+
+                <SeekBar
+                    android:id="@+id/Transition.Options.Anchor.Slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:value="0"
+                    android:valueFrom="0"
+                    android:valueTo="360"
+                    android:max="360"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Transition.Options.Scale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Transition.Options.Scale.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Scale"
+                    app:layout_constraintBottom_toTopOf="@id/Transition.Options.Scale.Slider"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/Transition.Options.Scale.Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="0"
+                    android:layout_marginEnd="10dp"
+
+                    app:layout_constraintBottom_toTopOf="@id/Transition.Options.Scale.Slider"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/Transition.Options.Scale.Slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:max="100"
+                    android:value="0"
+                    android:valueFrom="0"
+                    android:valueTo="100"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/Transition.Options.Rotation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/Transition.Options.Rotation.Label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Rotation"
+                    app:layout_constraintBottom_toTopOf="@id/Transition.Options.Rotation.Slider"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <TextView
+                    android:id="@+id/Transition.Options.Rotation.Number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="0"
+                    android:layout_marginEnd="10dp"
+
+                    app:layout_constraintBottom_toTopOf="@id/Transition.Options.Rotation.Slider"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <SeekBar
+                    android:id="@+id/Transition.Options.Rotation.Slider"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:value="0"
+                    android:valueFrom="0"
+                    android:valueTo="100"
+
+                    android:max="100"
+
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/Transition.Options.Apply"
+            android:layout_width="@dimen/apply_button_size"
+            android:layout_height="@dimen/apply_button_size"
+
+            android:layout_marginStart="20dp"
+
+            android:layout_gravity="bottom"
+            android:background="@drawable/apply_button_background"/>
+
+    </LinearLayout>
+    
+
+
+</LinearLayout>
+

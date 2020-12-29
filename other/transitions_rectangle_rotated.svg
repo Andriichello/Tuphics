@@ -1,0 +1,17 @@
+<svg width="100" height="70" viewBox="0 0 100 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<line y1="9.30396" x2="100" y2="9.30396" stroke="#A4A4A4"/>
+<line y1="36.1013" x2="100" y2="36.1013" stroke="#A4A4A4"/>
+<line y1="62.8987" x2="100" y2="62.8987" stroke="black"/>
+<line x1="13.5719" y1="1.0877e-08" x2="13.5719" y2="69.9346" stroke="black"/>
+<line x1="27.2974" y1="1.0877e-08" x2="27.2974" y2="69.9346" stroke="#A4A4A4"/>
+<line x1="40.3693" y1="1.0877e-08" x2="40.3693" y2="69.9346" stroke="#A4A4A4"/>
+<line x1="54.0948" y1="1.0877e-08" x2="54.0948" y2="69.9346" stroke="#A4A4A4"/>
+<line x1="66.5131" y1="1.0877e-08" x2="66.5131" y2="69.9346" stroke="#A4A4A4"/>
+<line x1="80.2386" y1="1.0877e-08" x2="80.2386" y2="69.9346" stroke="#A4A4A4"/>
+<line x1="94.6177" y1="1.0877e-08" x2="94.6177" y2="69.9346" stroke="#A4A4A4"/>
+<path d="M60.9893 26.3228L27 35.4302L44.3753 53.6617L79.1116 44.3541L60.9893 26.3228Z" stroke="#FF5454" stroke-width="1.2"/>
+<circle cx="26.77" cy="35.5413" r="2" transform="rotate(33.3394 26.77 35.5413)" fill="#FF5454"/>
+<circle cx="60.77" cy="25.7701" r="2" transform="rotate(33.3394 60.77 25.7701)" fill="#FF5454"/>
+<circle cx="78.77" cy="43.7701" r="2" transform="rotate(33.3394 78.77 43.7701)" fill="#FF5454"/>
+<circle cx="44.77" cy="53.7701" r="2" transform="rotate(33.3394 44.77 53.7701)" fill="#FF5454"/>
+</svg>
